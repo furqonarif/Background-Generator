@@ -1,0 +1,104 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 15%;
+    background: linear-gradient(to right, rgb(23, 1, 147), rgb(209, 23, 150));
+}
+
+h1 {
+    font: 600 3.5em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    width: 100%;
+}
+
+h3 {
+    font: 900 1em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.8);
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.01em;
+
+    background-color: rgba(255, 255, 255, 0.7);
+    display: inline-block; /* supaya kotaknya mengikuti panjang teks */
+    padding: 10px 20px;
+    border-radius: 10px; /* pojok melengkung */
+    margin-top: 15px;
+}
+
+/* Style untuk input color */
+input[type="color"] {
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border: 2px solid rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="color"]:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Hilangkan kotak hitam di dalam color picker */
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 8px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 8px;
+}
+
+/* Style tombol Random */
+#randomBtn {
+    background: linear-gradient(45deg, rgb(160, 24, 42), rgb(94, 99, 249));
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+#randomBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+#randomBtn:active {
+    transform: scale(0.98);
+}
+
+#colorCodes {
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#colorCodes span {
+    color: rgba(0, 0, 0, 0.8);
+}
